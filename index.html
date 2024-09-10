@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
 
     <link
       rel="stylesheet"
@@ -24,17 +25,15 @@
   </head>
 
   <body>
-    <div class="bg-color">
-
-
-    <header>
+    <header class="head">
       <div class="container">
         <div class="landing_header">
           <div class="logo">
-            <h3 class="logo_content margin-zero">Brandname</h3>
+            <h3 class="logo_content ">Brandname</h3>
           </div>
-          <nav>
-            <ul class="margin-zero">
+          <!-- <nav class="nav_bar" > -->
+            <nav>
+            <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">Pricing</a></li>
@@ -42,88 +41,91 @@
             </ul>
           </nav>
           <div class="header_btn">
-            <button class="blank_btn">Login</button>
-            <button class="filled_btn">
+            <button class="btn blank_btn">Login</button>
+            <button class="btn filled_btn">
               JOIN US<i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
+        <!-- </nav> -->
         </div>
       </div>
     </header>
 
     <!-- landing page content -->
 
-    <section class=" landing_container">
-      <div class="main_content">
-        <div class="left_content">
-          <h5 class="margin-zero">welcome</h5>
-          <h1 class="margin-zero">Best Learning Opportunities</h1>
-          <h4 class="margin-zero">
+    <section class=" bg_img">
+      <div class="container landing">
+      
+        <div class="landing_pg_content">
+          <h5>welcome</h5>
+          <h1>Best Learning Opportunities</h1>
+          <h4>
             Our goal is to make online education work for everyone
           </h4>
           <div class="main_btn">
-            <button class="filled_btn">Join Us</button>
-            <button class="blank_landing_btn">Learn More</button>
+            <button class="btn filled_btn">Join Us</button>
+            <button class="btn  landing_btn">Learn More</button>
           </div>
         </div>
-        <div class="image">
-          <img src="/image/landing_img.png" alt="image" />
+        <div class="landing_image">
+          <img src="./image/landing_img.png" alt="image" />
         </div>
       </div>
     </section>
+  
 
-</div>
 
     <!-- section 1-->
 
-    <section class="container">
-      <section class="site_section">
-        <div class="section_packages">
+    <section class="site_section ">
+      <div class="container ">
+        <div class="section_flex">
           <div class="sub_content">
             <div class="line"></div>
-            <h2 class="margin-zero">Approdable Packages</h2>
-            <p class="margin-zero">
+            <h2>Approdable Packages</h2>
+            <p>
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics
             </p>
-            <div class="link_button">
-              <a href="">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+            <div class="  link_button">
+              <a href="#">Learn More <i class="fa-solid fa-chevron-right"></i></a>
             </div>
           </div>
-          <div class="board">
-            <div class="card_1">
-              <img src="./cart_image/fixed-width sec-.png" alt="" />
-              <div class="card_1_line"></div>
-              <h5 class="margin-zero">Certified Teacher</h5>
-              <p class="margin-zero">
+          <div class="intro_grid">
+            <div class="card">
+             <div class="intro_icon"><i class="fa-solid fa-chalkboard"></i></div>
+              <div class="card_line"></div>
+              <h5>Certified Teacher</h5>
+              <p >
                 The gradual accumulation of information about
               </p>
             </div>
-            <div class="card_1">
-              <img src="./cart_image2/fixed-width sec-.png" alt="" />
-              <div class="card_1_line"></div>
-              <h5 class="margin-zero">Expert instruction</h5>
-              <p class="margin-zero">
+            <div class="card">
+              <div class="intro_icon"><i class="fa-solid fa-chalkboard"></i></div>
+              <div class="card_line"></div>
+              <h5 >Expert instruction</h5>
+              <p>
                 The gradual accumulation of information about
               </p>
             </div>
+          </div>
           </div>
         </div>
       </section>
-    </section>
-
+    
+      
     <!-- section 2-->
 
-    <section class="container">
-      <div class="video_section">
+    <section class="site_section">
+      <div class="container">
         <div class="image_content">
           <img src="./image/page_2_image.png" alt="page_2_img" />
         </div>
 
-        <div class="right_content">
-          <div class="section_2_line"></div>
-          <h2 class="margin-zero">Video in Live Action</h2>
-          <p class="margin-zero">
+        <div class="promo_content">
+          <div class="line"></div>
+          <h2>Video in Live Action</h2>
+          <p>
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
@@ -136,174 +138,180 @@
 
     <!-- section_3 -->
 
-    <section class="container">
-      <div class="product">
-        <div class="top_content">
-          <h6 class="margin-zero">Practice Advice</h6>
-          <h2 class="margin-zero">Approdable Packages</h2>
-          <p class="margin-zero">
+    <section class="section_product">
+      <div class="container">
+        <div class="title_content">
+          <h6>Practice Advice</h6>
+          <h2>Approdable Packages</h2>
+          <p >
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div class="cart">
-          <div class="template">
+        <div class="product">
+
+
+
+          <div class="product_item">
             <div class="picture">
               <img src="./image/page_3_image.png" alt="page_3" />
 
               <div class="inside_icons">
-                <button class="inside_btn">Sale</button>
+                <label for="sale">Sale</label>
                 <div class="picture_icons">
-                  <i class="icon_icon fa-regular fa-heart"></i>
-                  <i class="icon_icon fa-solid fa-cart-shopping"></i>
-                  <i class="icon_icon fa-solid fa-eye"></i>
+                  <button class="icon_button"><i class="ig icon_icon fa-regular fa-heart"></i></button>
+                 <button class="icon_button"> <i class="ig icon_icon fa-solid fa-cart-shopping"></i></button>
+                <button class="icon_button"><i class="ig icon_icon fa-solid fa-eye"></i></button> 
                 </div>
               </div>
             </div>
             <div class="detail">
               <div class="rating">
-                <h6 class="margin-zero">2,769 online courses</h6>
-                <div class="rate_btn">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>4.9
+                <h6>2,769 online courses</h6>
+                  <div class="rating_star">
+                    <i class="fa-solid fa-star"></i>
+                    <h6>4.9</h6>
                 </div>
               </div>
-              <h5 class="margin-zero">Watch our Courses</h5>
-              <p class="margin-zero">
+              <h5>Watch our Courses</h5>
+              <p>
                 We focus on ergonomics and meeting you where you work. It's only
                 a keystroke away.
               </p>
               <div class="download">
                 <i class="fa-solid fa-download"></i>
-                <h6 class="margin-zero">15 Sales</h6>
+                <h6>15 Sales</h6>
               </div>
               <div class="bill">
-                <h5 class="margin-zero">$16.48</h5>
-                <span class="margin-zero">$6.48</span>
+                <h5 >$16.48</h5>
+                <span >$6.48</span>
               </div>
               <div class="bottom">
-                <div class="text_icon">
-                  <i class="fa-regular fa-clock" style="color: #17dea2"></i
-                  >22h...
+                <div class="detail_icon">
+                  <i class="fa-regular fa-clock"></i> <small> 22h...</small> 
                 </div>
-                <div class="text_icon">
-                  <i class="fa-regular fa-clipboard" style="color: #f8a10d"></i
-                  >64 Lessons
+                <div class="detail_icon_a">
+                  <i class="fa-solid fa-chart-simple"></i><small>64 Lessons</small>
                 </div>
-                <div class="text_icon">
-                  <i class="fa-solid fa-chart-simple" style="color: #f8a10d"></i
-                  >Progress
+                <div class="detail_icon_b">
+                  <i class="fa-solid fa-chart-pie"></i>  <small>Progress</small>
                 </div>
               </div>
               <div class="detail_button">
                 <button class="product_btn">
-                  Learn More <i class="fa-solid fa-chevron-right"></i>
+                  <h6>Learn More</h6> <i class="fa-solid fa-chevron-right"></i>
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="template">
+
+
+
+          <div class="product_item">
             <div class="picture">
               <img src="./image/page_3_sec.png" alt="page_3" />
 
               <div class="inside_icons">
-                <button class="inside_btn">Sale</button>
+                <label for="sale">Sale</label>
                 <div class="picture_icons">
-                  <i class="icon_icon fa-regular fa-heart"></i>
-                  <i class="icon_icon fa-solid fa-cart-shopping"></i>
-                  <i class="icon_icon fa-solid fa-eye"></i>
+                  <button class="icon_button"><i class=" ig icon_icon fa-regular fa-heart"></i></button>
+                 <button class="icon_button"> <i class="ig icon_icon fa-solid fa-cart-shopping"></i></button>
+                <button class="icon_button"><i class="ig icon_icon fa-solid fa-eye"></i></button> 
                 </div>
               </div>
             </div>
             <div class="detail">
               <div class="rating">
-                <h6 class="margin-zero">2,769 online courses</h6>
-                <div class="rate_btn">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>4.9
+                <h6>2,769 online courses</h6>
+                  <div class="rating_star">
+                    <i class="fa-solid fa-star"></i>
+                    <h6>4.9</h6>
                 </div>
               </div>
-              <h5 class="margin-zero">Watch our Courses</h5>
-              <p class="margin-zero">
+              <h5>Watch our Courses</h5>
+              <p>
                 We focus on ergonomics and meeting you where you work. It's only
                 a keystroke away.
               </p>
               <div class="download">
                 <i class="fa-solid fa-download"></i>
-                <h6 class="margin-zero">15 Sales</h6>
+                <h6>15 Sales</h6>
               </div>
               <div class="bill">
-                <h5 class="margin-zero">$16.48</h5>
-                <span class="margin-zero">$6.48</span>
+                <h5 >$16.48</h5>
+                <span >$6.48</span>
               </div>
               <div class="bottom">
-                <div class="text_icon">
-                  <i class="fa-regular fa-clock" style="color: #17dea2"></i
-                  >22h...
+                <div class="detail_icon">
+                  <i class="fa-regular fa-clock"></i> <small> 22h...</small> 
                 </div>
-                <div class="text_icon">
-                  <i class="fa-regular fa-clipboard" style="color: #f8a10d"></i
-                  >64 Lessons
+                <div class="detail_icon_a">
+                  <i class="fa-solid fa-chart-simple"></i><small>64 Lessons</small>
                 </div>
-                <div class="text_icon">
-                  <i class="fa-solid fa-chart-simple" style="color: #f8a10d"></i
-                  >Progress
+                <div class="detail_icon_b">
+                  <i class="fa-solid fa-chart-pie"></i>  <small>Progress</small>
                 </div>
               </div>
               <div class="detail_button">
                 <button class="product_btn">
-                  Learn More<i class="fa-solid fa-chevron-right"></i>
+                  <h6>Learn More</h6> <i class="fa-solid fa-chevron-right"></i>
                 </button>
               </div>
             </div>
           </div>
+
+
+
+
         </div>
       </div>
     </section>
 
     <!-- section 4 -->
 
-    <section class="container">
-      <div class="index">
-        <div class="banner">
-          <h6 class="margin-zero">Testimonials</h6>
-          <h2 class="margin-zero">Watch our Courses</h2>
-          <p class="margin-zero">
+    <section class="section_product">
+      <div class="container">
+        <div class="title_content">
+          <h6>Testimonials</h6>
+          <h2>Watch our Courses</h2>
+          <p >
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div class="review_content">
-          <div class="total_review">
+        <div class="review">
+          <div class="review_grid">
             <img src="./image/review_pic.png" />
-            <p class="margin-zero">
+            <p >
               Slate helps you see how many more days you need to work to reach
               your financial goal for the month and year.
             </p>
-            <div class="rating_star">
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+            <div class="review_star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
             </div>
-            <h5 class="margin-zero">Regina Miles</h5>
-            <h6 class="margin-zero">Designer</h6>
+            <h5 >Regina Miles</h5>
+            <h6 >Designer</h6>
           </div>
-          <div class="total_review">
+          <div class="review_grid">
             <img src="./image/reiew_picture2.png" />
-            <p class="margin-zero">
+            <p >
               Slate helps you see how many more days you need to work to reach
               your financial goal for the month and year.
             </p>
-            <div class="rating_star">
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+            <div class="review_star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
             </div>
-            <h5 class="margin-zero">Regina Miles</h5>
-            <h6 class="margin-zero">Designer</h6>
+            <h5>Regina Miles</h5>
+            <h6 >Designer</h6>
           </div>
         </div>
       </div>
@@ -311,173 +319,168 @@
 
     <!-- section 5 -->
 
-    <section class="container">
-      <div class="profession_content">
-        <div class="profession_top">
-          <h6 class="margin-zero">Team</h6>
-          <h3 class="margin-zero">Get Quality Education</h3>
-          <p class="margin-zero">
+    <section class="section_product">
+      <div class="container">
+        <div class="title_content">
+          <h6>Team</h6>
+          <h3>Get Quality Education</h3>
+          <p>
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div class="profession_review">
-          <div class="profession_class">
-            <img src="./image/page5_pic1.png" />
-            <div class="card_topic">
-              <h5 class="margin-zero">Julian Jameson</h5>
-              <h6 class="margin-zero">Profession</h6>
+
+        <div class="staffs_grid">
+
+          <div class="staff_grid">
+            <img class="imgcurve" src="./image/page5_pic1.png" />
+            <div class="staff_detail">
+              <h5>Julian Jameson</h5>
+              <h6>Profession</h6>
               <div class="online_platform">
-                <button class="site">
                   <i class="fa-brands fa-facebook"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-instagram"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-twitter"></i>
-                </button>
               </div>
             </div>
           </div>
 
-          <div class="profession_class">
-            <img src="./image/page5_pic2.png" />
-            <div class="card_topic">
-              <h5 class="margin-zero">Julian Jameson</h5>
-              <h6 class="margin-zero">Profession</h6>
+          <div class="staff_grid">
+            <img  class="imgcurve"src="./image/page5_pic2.png"/>
+            <div class="staff_detail">
+              <h5>Julian Jameson</h5>
+              <h6>Profession</h6>
               <div class="online_platform">
-                <button class="site">
                   <i class="fa-brands fa-facebook"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-instagram"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-twitter"></i>
-                </button>
               </div>
             </div>
           </div>
 
-          <div class="profession_class">
-            <img src="./image/page5_pic3.png" />
-            <div class="card_topic">
-              <h5 class="margin-zero">Julian Jameson</h5>
-              <h6 class="margin-zero">Profession</h6>
+          <div class="staff_grid">
+            <img class="imgcurve" src="./image/page5_pic3.png"/>
+            <div class="staff_detail">
+              <h5>Julian Jameson</h5>
+              <h6>Profession</h6>
               <div class="online_platform">
-                <button class="site">
                   <i class="fa-brands fa-facebook"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-instagram"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-twitter"></i>
-                </button>
               </div>
             </div>
           </div>
 
-          <div class="profession_class">
-            <img src="./image/page5_pic4.png" />
-            <div class="card_topic">
-              <h5 class="margin-zero">Julian Jameson</h5>
-              <h6 class="margin-zero">Profession</h6>
+         <div class="staff_grid">
+            <img  class="imgcurve"src="./image/page5_pic4.png" />
+            <div class="staff_detail">
+              <h5>Julian Jameson</h5>
+              <h6>Profession</h6>
               <div class="online_platform">
-                <button class="site">
                   <i class="fa-brands fa-facebook"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-instagram"></i>
-                </button>
-                <button class="site">
                   <i class="fa-brands fa-twitter"></i>
-                </button>
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </section>
 
     <!-- section 6 -->
 
-    <section class="bg-color">
-      <section class="container">
-        <div class="subscribe_pg">
-          <div class="course_detail_top">
-            <h6 class="margin-zero">Newsletter</h6>
-            <h3 class="margin-zero">Watch our Courses</h3>
-            <p class="margin-zero">
+    <section class="bg_img">
+      <section class="section_product">
+      <div class="container">
+        <div class="title_content center">
+          
+            <h6>Newsletter</h6>
+            <h3>Watch our Courses</h3>
+            <p>
               Problems trying to resolve the conflict between the two major
               realms of Classical physics: Newtonian mechanics
             </p>
-          </div>
+            </div>
+          
           <div class="email">
             <form>
               <input class="sub_link" type="text" placeholder="Your Email" />
-              <button class="subscribe_btn">Subscribe</button>
+              <button class="btn filled_btn form_btn ">Subscribe</button>
             </form>
           </div>
-        </div>
-      </section>
+      
+      </div>
+    </section>
     </section>
 
     <!-- footer -->
 
-    <section class="container">
-      <div class="footer_pg">
-        <div class="footer_card">
-          <h5 class="margin-zero">Company Info</h5>
-          <h6 class="margin-zero"><a href="#">About Us</a></h6>
-          <h6 class="margin-zero"><a href="#">Carrier</a></h6>
-          <h6 class="margin-zero"><a href="#">We are hiring</a></h6>
-          <h6 class="margin-zero"><a href="#">Blog</a></h6>
+    
+    <footer>
+        <div class="container footer">
+          <div class="footer_grids">
+          <h5>Company Info</h5>
+          <h6><a href="#">About Us</a></h6>
+          <h6><a href="#">Carrier</a></h6>
+          <h6><a href="#">We are hiring</a></h6>
+          <h6><a href="#">Blog</a></h6>
         </div>
-        <div class="footer_card">
-          <h5 class="margin-zero">Legal</h5>
-          <h6 class="margin-zero"><a href="#">About Us</a></h6>
-          <h6 class="margin-zero"><a href="#">Carrier</a></h6>
-          <h6 class="margin-zero"><a href="#">We are hiring</a></h6>
-          <h6 class="margin-zero"><a href="#">Blog</a></h6>
-        </div>
-        <div class="footer_card">
-          <h5 class="margin-zero">Features</h5>
-          <h6 class="margin-zero"><a href="#">Business Marketing</a></h6>
-          <h6 class="margin-zero"><a href="#">User Analytic</a></h6>
-          <h6 class="margin-zero"><a href="#">Live Chat</a></h6>
-          <h6 class="margin-zero"><a href="#">Unlimited Support</a></h6>
-        </div>
-        <div class="footer_card">
-          <h5 class="margin-zero">Resources</h5>
-          <h6 class="margin-zero"><a href="#">IOS & Android</a></h6>
-          <h6 class="margin-zero"><a href="#">Watch a Demo</a></h6>
-          <h6 class="margin-zero"><a href="#">Customers</a></h6>
-          <h6 class="margin-zero"><a href="#">API</a></h6>
-        </div>
-        <div class="footer_card_1">
-          <h5 class="margin-zero">Get In Touch</h5>
-          <h6 class="margin-zero">
-            <i class="fa-solid fa-phone"></i><a href="#">(480) 555-0103</a>
-          </h6>
-          <p class="margin-zero">
-            <i class="fa-solid fa-location-dot"></i
-            ><a href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
-          </p>
-          <h6 class="margin-zero">
-            <i class="fa-solid fa-envelope"></i
-            ><a href="#">debra.holt@example.com</a>
-          </h6>
-        </div>
+        
+        <div class="footer_grids">
+          <h5>Legal</h5>
+          <h6><a href="#">About Us</a></h6>
+          <h6><a href="#">Carrier</a></h6>
+          <h6><a href="#">We are hiring</a></h6>
+          <h6><a href="#">Blog</a></h6>
+       </div>
+        
+       <div class="footer_grids">
+          <h5>Features</h5>
+          <h6><a href="#">Business Marketing</a></h6>
+          <h6><a href="#">User Analytic</a></h6>
+          <h6><a href="#">Live Chat</a></h6>
+          <h6><a href="#">Unlimited Support</a></h6>
       </div>
-    </section>
+       
+      <div class="footer_grids">
+          <h5>Resources</h5>
+          <h6 ><a href="#">IOS & Android</a></h6>
+          <h6 ><a href="#">Watch a Demo</a></h6>
+          <h6 ><a href="#">Customers</a></h6>
+          <h6><a href="#">API</a></h6>
+      </div>
+
+      <div class="footer_media">
+
+          <h5>Get In Touch</h5>
+
+          <div class="contact">
+            <i class="ip fa-solid fa-phone"></i><a href="#">(480) 555-0103</a>
+          </div>
+
+          <div class="contact">
+            <i class=" it fa-solid fa-location-dot"></i
+            ><a href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
+          </div>
+
+          <div class="contact">
+            <i class="fa-solid fa-envelope"></i><a href="#">debra.holt@example.com</a>
+         </div>
+
+        </div>
+
+        </div>
+      </footer>
 
     <!-- bottom section -->
-     <div class="footer_bg_clr">
-     <section class="container">
-      <div class="figma_content">
-          <h6 class="margin-zero">Made With Love By Figmaland All Right Reserved </h6>
+     <section class="bottom_bg_clr">
+     <div class="container">
+
+<div class="bottom_figma">
+      
+          <h6>Made With Love By Figmaland All Right Reserved </h6>
        
         <div class="figma_platform">
           <i class="fa-brands fa-facebook"></i>
@@ -485,7 +488,7 @@
           <i class="fa-brands fa-twitter"></i>
         </div>
       </div>
-     </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
