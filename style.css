@@ -90,6 +90,13 @@ h2{
     color: #FFFFFF;
 
 }
+.ham{
+    display: none;
+    
+}
+.check{
+    display: none;
+}
 .btn.blank_btn{
     padding: 15px 25px;
     color:var(--primary-color);
@@ -107,6 +114,10 @@ h2{
     display: flex;
     justify-content: space-around;
     flex: 8;
+    align-items: center;
+}
+.logo{
+    display: flex;
     align-items: center;
 }
 
@@ -475,8 +486,14 @@ color: var(--para-color);
     position: absolute; 
 
 }
+#check{
+    display: none;
+}
+nav > .main{
+    display: flex;
+}
 
-label{
+.sale{
     top: 20px;
     left: 20px;
     border-radius: 3px;
